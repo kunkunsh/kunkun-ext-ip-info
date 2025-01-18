@@ -3,7 +3,7 @@
   "name": "kunkun-ext-ip-info",
   "version": "0.0.8",
   "module": "index.ts",
-  "repository": "https://registry.npmjs.org/kunkun-ext-ip-info",
+  "repository": "https://github.com/kunkunsh/kunkun-ext-ip-info",
   "type": "module",
   "kunkun": {
     "name": "IP Info",
