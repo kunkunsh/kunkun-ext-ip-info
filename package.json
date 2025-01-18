@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schema.kunkun.sh/",
+  "name": "kunkun-ext-ip-info",
+  "version": "0.0.8",
+  "module": "index.ts",
+  "type": "module",
+  "kunkun": {
+    "name": "IP Info",
+    "shortDescription": "Show your current IP Info and Search for IP Address",
+    "longDescription": "Will display you IP Address and more information about this IP address, including Geo Location, ASN, ISP. You can also search for a specific IP.",
+    "identifier": "ip-info",
+    "permissions": [
+      "clipboard:write-text",
+      "fetch:all"
+    ],
+    "demoImages": [
+      "./demo/ip-info.png"
+    ],
+    "icon": {
+      "type": "iconify",
+      "value": "mdi:ip-network"
+    },
+    "templateUiCmds": [
+      {
+        "name": "IP Info",
+        "main": "dist/index.js",
+        "description": "Display your current IP addres and detailed information. Search for other IP address.",
+        "cmds": []
+      }
+    ],
+    "customUiCmds": []
+  },
+  "scripts": {
+    "dev": "bun build.ts dev",
+    "build": "bun build.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@kksh/api": "^0.0.52"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "valibot": "1.0.0-beta.12"
+  },
+  "peerDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@9.15.4"
+}
