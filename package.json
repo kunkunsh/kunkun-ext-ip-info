@@ -1,7 +1,7 @@
 {
   "$schema": "https://schema.kunkun.sh/",
   "name": "kunkun-ext-ip-info",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "module": "index.ts",
   "repository": "https://github.com/kunkunsh/kunkun-ext-ip-info",
@@ -16,7 +16,7 @@
       "fetch:all"
     ],
     "demoImages": [
-      "./demo/ip-info.png"
+      "https://i.imgur.com/6rxNyTt.png"
     ],
     "icon": {
       "type": "iconify",
@@ -38,7 +38,6 @@
   },
   "files": [
     "dist",
-    "demo",
     "README.md",
     "package.json",
     "mod.ts"
