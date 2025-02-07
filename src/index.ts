@@ -9,8 +9,8 @@ import {
 	log,
 	toast,
 	ui,
-	WorkerExtension
-} from "@kksh/api/ui/worker"
+	TemplateUiCommand
+} from "@kksh/api/ui/template"
 import { boolean, number, object, parse, safeParse, string, type InferOutput } from "valibot"
 
 const IpApiJsonSchema = object({
@@ -68,7 +68,7 @@ function mapIpInfoToListItem(ip: IpListItem): List.Item {
 	})
 }
 
-class IpInfo extends WorkerExtension {
+class IpInfo extends TemplateUiCommand {
 	ip?: InferOutput<typeof IpApiJsonSchema>
 	listitems: List.Item[] = []
 
